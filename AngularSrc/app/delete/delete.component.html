@@ -1,0 +1,19 @@
+
+<div align="center">
+    <h3>Delete Employee Data</h3>
+    <br><br>
+
+
+    <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+
+        <label>Emp ID   : </label>
+        <input type="number" name="eid" id="eid" #eid (ngModel)="eid">
+        <br>
+
+      
+
+        <input type="submit" value="Delete">
+    </form>
+
+</div>
+

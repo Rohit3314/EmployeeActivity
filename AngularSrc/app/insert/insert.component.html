@@ -1,0 +1,27 @@
+<div align="center">
+    <h3>Insert Employee Data</h3>
+    <br><br>
+
+
+    <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)">
+
+        <label>Emp ID   : </label>
+        <input type="number" name="eid" id="eid" #eid (ngModel)="eid">
+        <br>
+
+        <label>Emp Name  :</label>
+        <input type="text" name="ename" id="ename" #ename (ngModel)="ename">
+        <br>
+
+        <label>Emp Salary :</label>
+        <input type="number" name="esalary" id="esalary" #esalary (ngModel)="esalary" >
+        <br>
+        
+        <label >Emp Desg  :</label>
+        <input type="text" name="edesg" id="edesg" #edesg (ngModel)="edesg">
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
